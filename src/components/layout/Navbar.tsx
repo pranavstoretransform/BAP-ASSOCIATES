@@ -32,20 +32,15 @@ export function Navbar() {
           
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center shadow-lg shadow-accent/30 group-hover:rotate-90 transition-transform duration-500">
-              <img 
-                src={`${import.meta.env.BASE_URL}images/logo-icon.png`} 
+            <img 
+                src="/images/logo-icon.png" 
                 alt="BAP Logo" 
-                className="w-6 h-6 object-contain"
+                className="w-40 h-20 object-contain"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                   e.currentTarget.parentElement!.innerHTML = '<div class="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>';
                 }}
               />
-            </div>
-            <span className="font-display font-bold text-2xl text-white tracking-wide">
-              BAP & <span className="text-accent">Associates</span>
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
