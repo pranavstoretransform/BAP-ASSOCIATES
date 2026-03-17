@@ -26,7 +26,10 @@ export default async function handler(req, res) {
     return res.status(200).json({ success: true });
 
   } catch (err) {
-    console.error("API ERROR:", err);
-    return res.status(500).json({ error: err.message });
-  }
+  console.error("API ERROR FULL:", err);
+  return res.status(500).json({ 
+    error: err.message,
+    stack: err.stack 
+  });
+}
 }
