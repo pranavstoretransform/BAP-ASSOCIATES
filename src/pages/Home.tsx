@@ -22,7 +22,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <FadeIn>
             <span className="inline-block py-1.5 px-4 rounded-full bg-accent/20 text-accent font-bold tracking-wider text-sm mb-6 border border-accent/30">
-              STRATEGIC MANAGEMENT & INVESTOR RELATIONS
+              pananv patel
             </span>
           </FadeIn>
           
